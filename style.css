@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid red;
+}
+
+:root {
+    ---bg-color: hsl(47, 88%, 63%);
+    --neutral-w: hsl(0, 0%, 100%);
+    --neutral-b: hsl(0, 0%, 7%);
+    --neutral-g: hsl(0, 0%, 50%);
+    --para-fs: 16px;
+    --ft: Figtree;
+}
+
+body {
+    background-color: var(---bg-color);
+    font-family: var(--ft);
+    display: flex;
+    flex-direction: column;
+    font-size: var(--ft);
+    height: 100vh;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--neutral-w);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid var(--neutral-b);
+    border-top-color: var(--neutral-g);
+    border-radius: 18px;
+    height: auto;
+    gap: 18px;
+    box-shadow: 8px 8px var(--neutral-b);
+    min-width: 300px;
+    max-width: 380px;
+    margin: 0 40px;
+}
+
+.container > img {
+    border-radius: 12px;
+}
+
+.text-one {
+    background-color: var(---bg-color);
+    align-self: flex-start;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-weight: 800;
+}
+
+.text-two {
+    color: var(--neutral-b);
+    font-weight: 500;
+}
+
+.heading {
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.heading:hover {
+    color: var(---bg-color);
+    cursor: pointer;
+}
+
+.article {
+    color: var(--neutral-g);
+    line-height: 1.5em;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile > img {
+    width: 2em;
+    height: auto;
+}
+
+.profile-name {
+    font-weight: 800;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
